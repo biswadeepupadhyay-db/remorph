@@ -19,3 +19,4 @@ def test_table_select_columns(table_conf, table_schema):
 
     assert table_conf.get_select_columns(schema, "source") == {"s_nationkey", "s_suppkey"}
     assert len(table_conf.get_select_columns(schema, "source")) == 2
+
